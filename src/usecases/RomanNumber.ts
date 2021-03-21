@@ -10,7 +10,12 @@ class RomanNumber {
   }
 
   convert = (roman: string): Number => {
-    return this.symbols[roman]
+    let count = 0
+    for (let position = 0; position < roman.length; position++) {
+      count += this.symbols[roman[position]];
+    }
+
+    return count
   }
 }
 
