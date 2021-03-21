@@ -9,10 +9,16 @@ class RomanNumber {
     'M': 1000
   }
 
-  convert = (roman: string): Number => {
-    let count = 0
-    for (let position = 0; position < roman.length; position++) {
-      count += this.symbols[roman[position]];
+  convert = (roman: string): number => {
+    let count:number = 0
+    let lastNumberOnRight:number = 0;
+    for (let position = roman.length - 1; position >= 0; position--) {
+      let current:number = this.symbols[roman[position]];
+      let multiplier:number = (current < lastNumberOnRight) ? -1 : 1;
+      
+      count += current * multiplier;
+
+      lastNumberOnRight = current
     }
 
     return count
