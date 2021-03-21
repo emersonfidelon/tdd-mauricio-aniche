@@ -1,0 +1,41 @@
+Arguments: 
+  /home/emerson/.nvm/versions/node/v15.11.0/bin/node /usr/bin/yarn add typescryt -D
+
+PATH: 
+  /home/emerson/.nvm/versions/node/v15.11.0/bin:/home/emerson/.local/bin:/home/emerson/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/emerson/bin:/var/lib/snapd/snap/bin:/home/emerson/.composer/vendor/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.11.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescryt: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/util/request-manager.js:452:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/node_modules/request/request.js:185:22)
+      at Request.emit (node:events:378:20)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/node_modules/request/request.js:1154:10)
+      at Request.emit (node:events:378:20)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/node_modules/request/request.js:1076:12)
+      at Object.onceWrapper (node:events:484:28)
+      at IncomingMessage.emit (node:events:390:22)
+      at endReadableNT (node:internal/streams/readable:1307:12)
+      at processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+npm manifest: 
+  {
+    "name": "tdd-mauricio-aniche",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
