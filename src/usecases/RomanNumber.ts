@@ -1,12 +1,16 @@
 class RomanNumber {
-  convert = (roman: string): Number => {
-    if(roman === 'I') {
-      return 1
-    }
+  readonly symbols = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000
+  }
 
-    if(roman === 'V') {
-      return 5
-    }
+  convert = (roman: string): Number => {
+    return this.symbols[roman]
   }
 }
 

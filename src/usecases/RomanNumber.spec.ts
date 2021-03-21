@@ -12,4 +12,10 @@ describe('Name of the group', () => {
     const number = roman.convert('V')
     expect(5).toBe(number)
   });
+
+  test('should know L symbol', () => {
+    const roman = new RomanNumber()
+    const number = roman.convert('L')
+    expect(50).toBe(number)
+  });
 });
