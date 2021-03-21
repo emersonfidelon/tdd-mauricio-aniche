@@ -57,5 +57,11 @@ describe('RomanNumber', () => {
       expect(4).toBe(number2)
       expect(19).toBe(number3)
     });
+
+    test('should understand complex numbers like XXIX', () => {
+      const roman = new RomanNumber()
+      const number = roman.convert('XXIX')
+      expect(29).toBe(number)
+    });
   });
 });
