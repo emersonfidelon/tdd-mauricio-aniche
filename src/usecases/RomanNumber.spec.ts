@@ -24,4 +24,10 @@ describe('Name of the group', () => {
     const number = roman.convert('II')
     expect(2).toBe(number)
   });
+
+  test('should know two symbols, for example XX', () => {
+    const roman = new RomanNumber()
+    const number = roman.convert('XX')
+    expect(20).toBe(number)
+  });
 });
