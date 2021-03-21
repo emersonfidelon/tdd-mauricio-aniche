@@ -1,6 +1,6 @@
 import { RomanNumber } from "./RomanNumber";
 
-describe('Name of the group', () => {
+describe('RomanNumber', () => {
   test('should know I symbol', () => {
     const roman = new RomanNumber();
     const number = roman.convert('I');
@@ -29,5 +29,17 @@ describe('Name of the group', () => {
     const roman = new RomanNumber()
     const number = roman.convert('XX')
     expect(20).toBe(number)
+  });
+
+  test('should understand four symbols, two by two, for example XXII', () => {
+    const roman = new RomanNumber()
+    const number = roman.convert('XXII')
+    expect(22).toBe(number)
+  });
+
+  test('should understand four symbols, two by two, for example XIII', () => {
+    const roman = new RomanNumber()
+    const number = roman.convert('XIII')
+    expect(13).toBe(number)
   });
 });
