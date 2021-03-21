@@ -41,7 +41,11 @@ describe('RomanNumber', () => {
     test('should understand numbers like XIII', () => {
       const roman = new RomanNumber()
       const number = roman.convert('XIII')
+      const number2 = roman.convert('VIII')
+      const number3 = roman.convert('XVII')
       expect(13).toBe(number)
+      expect(8).toBe(number2)
+      expect(17).toBe(number3)
     });
   
     test('should understand numbers like IX', () => {
